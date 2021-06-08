@@ -1,0 +1,50 @@
+[
+  {
+    "sku": 8280576,
+    "nombre": "SONY Alpha ILCE-9",
+    "precio": 2339990,
+    "precioName": "2.339.990",
+    "imagen": "resources/item01.jpg",
+    "descripcion": "La mejor cámara del mercado"
+  },
+  {
+    "sku": 7046409,
+    "nombre": "SONY Alpha ILCE-7M3",
+    "precio": 1299990,
+    "precioName": "1.299.990",
+    "imagen": "resources/item02.jpg",
+    "descripcion": "Versátil liviana y de uso profesional"
+  },
+  {
+    "sku": 14522354,
+    "nombre": "CANON t8i",
+    "precio": 899990,
+    "precioName": "899.990",
+    "imagen": "resources/item03.jpg",
+    "descripcion": "La mejor aps-c ideal para usuarios avanzados"
+  },
+  {
+    "sku": 8439873,
+    "nombre": "PANASONIC GX9",
+    "precio": 699990,
+    "precioName": "699.990",
+    "imagen": "resources/item04.jpg",
+    "descripcion": "Cámara compacta y de gran calidad"
+  },
+  {
+    "sku": 4079635,
+    "nombre": "SONY ILCE-6000",
+    "precio": 434990,
+    "precioName": "434.990",
+    "imagen": "resources/item05.jpg",
+    "descripcion": "La mejor para viajes"
+  },
+  {
+    "sku": 5733074,
+    "nombre": "PANASONIC FZ80PP-K",
+    "precio": 349990,
+    "precioName": "349.990",
+    "imagen": "resources/item06.jpg",
+    "descripcion": "Lente fijo de gran alcance indeal para comenzar"
+  }
+]
