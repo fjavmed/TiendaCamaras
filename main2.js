@@ -89,9 +89,6 @@ function cargarProductosTienda()
 
   });
 
-  // $('html, body').animate({
-  //   scrollTop: $("#productos").offset().top
-  // }, 500);
 }
 
 setInterval(cargarProductosTienda, 10000);  // carga productos cada X segundos
@@ -146,18 +143,9 @@ function agregarAlCarrito(item)
 
   $('#totalCarro').html('<strong>TOTAL: $'+totalCarro+'</strong>');
 
-      // se incorpora el elemento
-    // if (carrito.length>0) {
-    //     // showCart.appendChild(textoCarrito);
-    
-    //     textoCarrito.textContent = "Has seleccionado "+ carrito.length +" productos ";
-    // }
 }
 
 $(document).ready(function(){
-  // $("#addbutton").click(function(){
-  //   $("#emptyCart").hide();
-  // });
   
   $(document).on('click', '[id*=addbutton]', function(e) {
     let sku = e.currentTarget.id.replace('addbutton', '');  // e.currentTarget.id obtiene ID del button en DOM
@@ -210,14 +198,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  // $("#hide").click(function(){
-  //   $( "#muestraCarro" ).fadeOut( "slow", function() {
-  //         });  
-  // });
-  // $("#show").click(function(){
-  //   $("#muestraCarro").show();
-  //   $("#muestraCarro").css("color", "red").slideUp(1000).slideDown(1000);    
-  // });
 
   $('#verCarrito').click(function() {
     if ($(this).html() == 'Ocultar Carrito') // está visible, hay que esconderlo
@@ -227,8 +207,7 @@ $(document).ready(function(){
     }
     else  // está oculto, hay que mostrarlo
     {
-        $( "#muestraCarro" ).show();
-      // $("#muestraCarro").css("color", "red").slideUp(1000).slideDown(1000);    
+        $( "#muestraCarro" ).show();  
       $(this).html('Ocultar Carrito');
     }
   });
