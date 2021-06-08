@@ -190,18 +190,20 @@ $(document).ready(function(){
         break;
       }
     }
+
     $('#fila'+sku).remove();  // borra fila de tabla html
-    carrito.splice(carrito.indexOf(itemborrar));  //borrar item del array carrito
+    let indice = carrito.indexOf(itemborrar);
+    carrito.splice(indice, 1);  //borrar item del array Carrito
 
     if (carrito.length > 0)
-$('#emptyCart').hide();
-else
-$('#emptyCart').show();
+    $('#emptyCart').hide();
+    else
+    $('#emptyCart').show();
 
-  totalCarro -= (itemborrar.precio*itemborrar.cantidad);
-  $('#totalCarro').html('<strong>TOTAL: $'+totalCarro+'</strong>');
+    totalCarro -= (itemborrar.precio * itemborrar.cantidad);
+    $('#totalCarro').html('<strong>TOTAL: $'+totalCarro+'</strong>');
 
-  itemborrar.cantidad = 1;  // se resetea cantidad del que se borra (para que empiecen en 1)
+    itemborrar.cantidad = 1;  // se resetea cantidad del que se borra (para que empiecen en 1)
 
     return false; // pa que no suba
   });
